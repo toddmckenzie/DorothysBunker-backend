@@ -1,11 +1,20 @@
 // Update with your config settings.
+const localpg = { host: 'localhost', database: 'test', user: 'test', "password": 'test'}
+const dbConnection = process.env.DATABASE_URL || localpg;
 
 module.exports = {
 
   development: {
     client: 'sqlite3',
+    userNullAsDefault: true,
     connection: {
       filename: './database/maps.db3'
+    },
+    migrations: {
+      directory: './database/migrations'
+    },
+    seeds: {
+      directory: './database/seeds'
     }
   },
 

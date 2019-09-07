@@ -1,9 +1,10 @@
 //goal is to check the length of the database users and if the length is 1 don't allow another user to register.
-const db = ('./models/users')
+const db = ('../models/users.js')
 
 module.exports = (req, res, next) => {
+    next()
     db
-    .get()
+    .findAll()
     .then((result) => {
         if (result.length === 1){
             console.log(result)
@@ -19,3 +20,4 @@ module.exports = (req, res, next) => {
         res.status(500).json({ message: "Internal Server Error" })
     });
 }
+//this code only allows one user (the admin) to be in database at any given time.
