@@ -8,7 +8,7 @@ server.use(express.json());
 server.use(helmet());
 server.use(cors());
 
-const login = require('../routes/login')
+const login = require('./routes/login')
 
 server.use('/login', login)
 
