@@ -3,7 +3,6 @@ const admin_id = process.env.ADMIN_ID || 'ME'
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const secret = require('../config/secrets.js');
-const restrictedUsers = require('../auth/restrictedUsers.js');
 const restricted = require('../auth/restricted.js')
 const db = require("../models/users.js")
 
