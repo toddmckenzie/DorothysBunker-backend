@@ -1,0 +1,32 @@
+{
+  "name": "Maps-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toddmckenzie/Maps-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toddmckenzie/Maps-backend/issues"
+  },
+  "homepage": "https://github.com/toddmckenzie/Maps-backend#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.19.3",
+    "nodemon": "^1.19.2",
+    "pg": "^7.12.1",
+    "sqlite3": "^4.1.0"
+  }
+}
