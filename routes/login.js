@@ -12,8 +12,8 @@ router.post('/register', (req, res) => {
     const hash = bcrypt.hashSync(user.password);
     user.password = hash;
 
-    if (!user.username || !user.password) {
-        return res.status(400).json({ message: "A username or password is missing."})
+    if (!user.username || !user.password || !user.email) {
+        return res.status(400).json({ message: "A username, password or email is missing."})
     }
 
     db
@@ -25,6 +25,7 @@ router.post('/register', (req, res) => {
                 res.status(200).json({
                         id: user.id,
                         username: user.username,
+                        email: user.email,
                         token: token
                     })
                 })
@@ -59,6 +60,7 @@ router.post('/',  (req, res) => {
         
     })
     .catch(err => {
+        console.error(err)
         res.status(500).json({ message: "Internal server error"})
     })
 })
