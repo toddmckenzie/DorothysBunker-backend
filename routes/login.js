@@ -6,7 +6,7 @@ const secret = require('../config/secrets.js');
 const restricted = require('../auth/restricted.js')
 const db = require("../models/users.js")
 
-
+//only able to have one user account for the admin.
 router.post('/register', (req, res) => {
     let user = req.body;
     const hash = bcrypt.hashSync(user.password);
@@ -28,7 +28,7 @@ router.post('/register', (req, res) => {
         }
     })
     .catch(err => {
-        console.log(err)
+        res.status(500).json({ message: "Internal Server Error"})
     })
 
 
@@ -66,7 +66,6 @@ router.post('/',  (req, res) => {
         
     })
     .catch(err => {
-        console.error(err)
         res.status(500).json({ message: "Internal server error"})
     })
 })
