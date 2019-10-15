@@ -13,7 +13,8 @@ router.post('/', restricted, (req, res) => {
         road: (shelter.road) ? shelter.road : null,
         city: (shelter.city) ? shelter.city : null,
         stateAbbrev: shelter.stateAbbrev,
-        zip_code: (shelter.zip_code) ? shelter.zip_code : null
+        zip_code: (shelter.zip_code) ? shelter.zip_code : null,
+        description: (shelter.description) ? shelter.description : null
     }
 
     db

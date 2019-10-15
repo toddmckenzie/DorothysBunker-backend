@@ -8,11 +8,12 @@ server.use(express.json());
 server.use(helmet());
 server.use(cors());
 
-const login = require('./routes/login')
-const shelters = require('./routes/shelters')
+const login = require('./routes/login');
+const shelters = require('./routes/shelters');
+const comments = require('./routes/comments');
 
-
-server.use('/login', login)
-server.use('/shelters', shelters)
+server.use('/login', login);
+server.use('/shelters', shelters);
+server.use('/comments', comments);
 
 module.exports = server;
