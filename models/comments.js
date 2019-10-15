@@ -4,7 +4,8 @@ const db = require('../database/dbConfig.js');
 module.exports = {
     findById,
     addComment,
-    removeComment
+    removeComment,
+    findAllComments
 }
 
 function findById(id) {
@@ -19,4 +20,7 @@ async function addComment(obj) {
 function removeComment(id) {
     return db('comments').where({ id }).first();
 }
-    
+
+function findAllComment() {
+    return db('comments');
+}

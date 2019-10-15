@@ -55,5 +55,15 @@ router.delete('/:id', (req, res) => {
     })
 })
 
+router.get('/', (req, res) => {
+    db
+    .findAllComments()
+    .then(result => {
+        res.json(result)
+    })
+    .catch(err => {
+        res.status(500).json({ message: "Internal Server Error"})
+    })
+})
 
 module.exports = router;
