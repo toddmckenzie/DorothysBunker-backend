@@ -21,6 +21,6 @@ function removeComment(id) {
     return db('comments').where({ id }).first();
 }
 
-function findAllComment() {
+function findAllComments() {
     return db('comments');
 }

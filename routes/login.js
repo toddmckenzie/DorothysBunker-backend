@@ -6,42 +6,35 @@ const secret = require('../config/secrets.js');
 const restricted = require('../auth/restricted.js')
 const db = require("../models/users.js")
 
-//only able to have one user account for the admin.
+
 router.post('/register', (req, res) => {
     let user = req.body;
     const hash = bcrypt.hashSync(user.password);
     user.password = hash;
-
-    if (user.username !== admin_id) {
-        return res.status(401).json({ message: "You are not allowed to see this information."})
-    }
 
     if (!user.username || !user.password) {
         return res.status(400).json({ message: "A username or password is missing."})
     }
 
     db
-    .findAll()
+    .add(user)
     .then(result => {
-        if (result.length === 1){
-            res.status(400).json({ message: "You are not authroized to have an account"})
-        }
-    })
+        db.findUser(user.username)
+            .then(user => {
+                const token = generateToken(user)
+                res.status(200).json({
+                        id: user.id,
+                        username: user.username,
+                        token: token
+                    })
+                })
+            .catch(err => console.log(err)) })
     .catch(err => {
         res.status(500).json({ message: "Internal Server Error"})
     })
 
-
-    db
-    .add(user)
-    .then(result => {
-        res.status(200).json(result)
-    })
-    .catch(err => {
-        res.status(500).json({ message: "Internal server error" })
-    })
-
 })
+
 
 
 router.post('/',  (req, res) => {
