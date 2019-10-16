@@ -52,6 +52,7 @@ router.post('/',  (req, res) => {
             res.status(200).json({
                     id: user.id,
                     username: user.username,
+                    email: user.email,
                     token: token
             })
         } else {
@@ -60,7 +61,6 @@ router.post('/',  (req, res) => {
         
     })
     .catch(err => {
-        console.error(err)
         res.status(500).json({ message: "Internal server error"})
     })
 })
