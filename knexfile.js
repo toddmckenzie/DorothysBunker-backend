@@ -1,6 +1,7 @@
 // Update with your config settings.
-const localpg = { host: 'localhost', database: 'test', user: 'test', "password": 'test'}
-const dbConnection = process.env.DATABASE_URL || localpg;
+// const localpg = { host: 'localhost', database: 'test', user: 'test', "password": 'test'}
+// const dbConnection = process.env.DATABASE_URL || localpg;
+const dbConnection = process.env.DATABASE_URL;
 
 module.exports = {
 
