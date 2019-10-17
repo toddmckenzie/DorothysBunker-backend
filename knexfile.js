@@ -24,7 +24,7 @@ module.exports = {
     client: 'pg',
     connection: dbConnection,
     migrations: {
-      tableName: './database/migrations'
+      directory: './database/migrations'
     },
     seeds: {
       directory: './database/seeds'
