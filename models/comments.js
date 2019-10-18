@@ -14,7 +14,7 @@ function findById(id) {
 
 async function addComment(obj) {
     await db('comments').insert(obj);
-    return db('comments').where({ shelter_id: obj.shelter_id})
+    return db('comments').where({ shelter_id: obj.shelter_id}).orderBy('comments.id', 'desc').join('users', 'comments.user_id', '=', 'users.id').select('users.username', 'comments.id', 'comments.shelter_id', 'comments.posted_at', 'comments.comment');
 }
 
 function removeComment(id) {
