@@ -9,7 +9,7 @@ module.exports = {
 }
 
 function findById(id) {
-    return db('comments').where({ shelter_id: id}).join('users', 'comments.user_id', '=', 'users.id').select('users.username', 'comments.id', 'comments.shelter_id', 'comments.posted_at', 'comments.comment').orderBy('id', 'desc');
+    return db('comments').where({ shelter_id: id}).join('users', 'comments.user_id', '=', 'users.id').select('users.username', 'comments.id', 'comments.shelter_id', 'comments.posted_at', 'comments.comment').orderBy(['id', 'desc']);
 }
 
 async function addComment(obj) {
