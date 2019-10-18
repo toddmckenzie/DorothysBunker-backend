@@ -6,7 +6,6 @@ exports.up = function(knex) {
       tbl.integer('shelter_id').unsigned().references('id').inTable('shelters');
       tbl.timestamp('posted_at', { useTz: true}).notNullable().defaultTo(knex.fn.now());
       tbl.integer('user_id').unsigned().references('id').inTable('users')
-      // tbl.string('username').references('username').inTable('users');
   })
 };
 
