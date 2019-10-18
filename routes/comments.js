@@ -24,7 +24,6 @@ router.post('/:id', restricted, (req, res) => {
         res.json(result)
     })
     .catch(err => {
-        console.error(err)
         res.status(500).json({ message: "Internal Server Error."})
     })
 })
