@@ -7,14 +7,13 @@ const db = require('../models/comments.js');
 router.post('/:id', restricted, (req, res) => {
     const shelterId = req.params.id;
     
-    if (!req.body.comment || !req.body.user_id || !req.body.username) {
-        res.status(400).json({ message: "Request Body needs comment, user_id and username."})
+    if (!req.body.comment || !req.body.user_id ) {
+        res.status(400).json({ message: "Request Body needs comment, user_id"})
     }
 
     const clean = {
         comment: req.body.comment,
         shelter_id: shelterId,
-        username: req.body.username,
         user_id: req.body.user_id,
     }
 
