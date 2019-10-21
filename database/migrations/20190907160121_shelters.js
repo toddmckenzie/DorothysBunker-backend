@@ -9,6 +9,8 @@ exports.up = function(knex) {
       tbl.string('stateAbbrev').notNullable();
       tbl.string('zip_code');
       tbl.string('description');
+      tbl.integer('lat');
+      tbl.integer('lng');
   })
 };
 
