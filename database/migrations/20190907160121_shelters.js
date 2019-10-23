@@ -6,11 +6,10 @@ exports.up = function(knex) {
       tbl.string('street_num');
       tbl.string('road');
       tbl.string('city');
-      tbl.string('stateAbbrev').notNullable();
+      tbl.string('state').notNullable();
       tbl.string('zip_code');
-      tbl.string('description');
-      tbl.integer('lat');
-      tbl.integer('lng');
+      tbl.float('lat');
+      tbl.float('lng');
   })
 };
 

@@ -62,7 +62,6 @@ exports.seed = function(knex) {
     state: "NC",
     
     zip_code: "28584"
-    
     },{
     
     id: 4,
@@ -422,7 +421,8 @@ exports.seed = function(knex) {
     state: "CA",
 
     zip_code: "94104"
-    }, {
+    }, 
+    {
         id: 22, 
         
         lat: 39.390041,
@@ -437,12 +437,11 @@ exports.seed = function(knex) {
 
         city: "Smithville", 
 
-        stateAbbrev: "MO", 
+        state: "MO", 
 
         zip_code: "64089"
-    }
-    ]
-      ]);
-    });
-};
+     }
+  ])
+})
+}
 

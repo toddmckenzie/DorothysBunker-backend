@@ -18,7 +18,7 @@ async function addComment(obj) {
 }
 
 function removeComment(id) {
-    return db('comments').where({ id }).first();
+    return db('comments').where({ id }).del();
 }
 
 function findAllComments() {
