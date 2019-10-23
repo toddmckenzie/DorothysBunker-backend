@@ -17,6 +17,6 @@ const tellUs = require('./routes/tellUs');
 server.use('/login', login);
 server.use('/shelters', shelters);
 server.use('/comments', comments);
-server.use('./tellus', tellUs);
+server.use('/tellus', tellUs);
 
 module.exports = server;

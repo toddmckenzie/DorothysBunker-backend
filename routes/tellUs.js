@@ -9,7 +9,7 @@ router.post('/', (req, res) => {
         res.status(400).json({ message: "You need an info, shelterName, address, yourName and contactNum in the request."})
     }
 
-    router.add(form)
+    db.add(form)
     .then(result => {
         res.status(200).json({message: "Success"})
     })
