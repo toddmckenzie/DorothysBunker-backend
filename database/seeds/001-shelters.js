@@ -62,385 +62,385 @@ exports.seed = function(knex) {
     state: "NC",
     
     zip_code: "28584"
-    }
-    // },{
+    },{
     
-    // id: 4,
+    id: 4,
     
-    // lat: 33.2788484,
+    lat: 33.2788484,
     
-    // lng: -86.350157,
+    lng: -86.350157,
     
-    // name: "Childersburg’s Community Storm Shelter",
+    name: "Childersburg’s Community Storm Shelter",
     
-    // street_num: "85",
+    street_num: "85",
     
-    // road: "Graves Avenue",
+    road: "Graves Avenue",
     
-    // city: "Childersburg",
+    city: "Childersburg",
     
-    // state: "AL",
+    state: "AL",
     
-    // zip_code: "35044"
+    zip_code: "35044"
     
-    // },{
+    },{
     
-    // id: 5,
+    id: 5,
     
-    // lat: 33.19206690000001,
+    lat: 33.19206690000001,
     
-    // lng: -86.4604643,
+    lng: -86.4604643,
     
-    // name: "Lay Lake Volunteer Fire Department",
+    name: "Lay Lake Volunteer Fire Department",
     
-    // street_num: "700",
+    street_num: "700",
     
-    // road: "Heasletts Road",
+    road: "Heasletts Road",
     
-    // city: "Childersburg",
+    city: "Childersburg",
     
-    // state: "AL",
+    state: "AL",
     
-    // zip_code: "35044"
+    zip_code: "35044"
     
-    // },{
+    },{
     
-    // id: 6,
+    id: 6,
     
-    // lat: 33.3927654,
+    lat: 33.3927654,
     
-    // lng: -86.3145009,
+    lng: -86.3145009,
     
-    // name: "Lanier Volunteer Fire Department",
+    name: "Lanier Volunteer Fire Department",
     
-    // street_num: "4445",
+    street_num: "4445",
     
-    // road: "Kings Chapel Road",
+    road: "Kings Chapel Road",
     
-    // city: "Alpine",
+    city: "Alpine",
     
-    // state: "AL",
+    state: "AL",
     
-    // zip_code: "35104"
+    zip_code: "35104"
     
-    // },{
+    },{
     
-    // id: 7,
+    id: 7,
     
-    // lat: 33.1834812,
+    lat: 33.1834812,
     
-    // lng: -86.2978567,
+    lng: -86.2978567,
     
-    // name: "Town of Oak Grove Volunteer Fire Department",
+    name: "Town of Oak Grove Volunteer Fire Department",
     
-    // street_num: "390",
+    street_num: "390",
     
-    // road: "Landers Loop",
+    road: "Landers Loop",
     
-    // city: "Oak Grove",
+    city: "Oak Grove",
     
-    // state: "AL",
+    state: "AL",
     
-    // zip_code: "35150"
+    zip_code: "35150"
     
-    // },{
+    },{
     
-    // id: 8,
+    id: 8,
     
-    // lat: 33.1707777,
+    lat: 33.1707777,
     
-    // lng: -86.27200730000001,
+    lng: -86.27200730000001,
     
-    // name: "Coosa Valley Rescue Squad",
+    name: "Coosa Valley Rescue Squad",
     
-    // street_num: "1410",
+    street_num: "1410",
     
-    // road: "Edwards Street",
+    road: "Edwards Street",
     
-    // city: "Sylacauga",
+    city: "Sylacauga",
     
-    // state: "AL",
+    state: "AL",
     
-    // zip_code: "35150"
+    zip_code: "35150"
     
-    // },{
+    },{
     
-    // id: 9,
+    id: 9,
     
-    // lat: 33.4317012,
+    lat: 33.4317012,
     
-    // lng: -85.9949192,
+    lng: -85.9949192,
     
-    // name: "Ironaton Volunteer Fire Department",
+    name: "Ironaton Volunteer Fire Department",
     
-    // street_num: "4075",
+    street_num: "4075",
     
-    // road: "Ironaton Road",
+    road: "Ironaton Road",
     
-    // city: "Talladega",
+    city: "Talladega",
     
-    // state: "AL",
+    state: "AL",
     
-    // zip_code: "35160"
+    zip_code: "35160"
     
-    // },{
+    },{
     
-    // id: 10,
+    id: 10,
     
-    // lat: 33.5043295,
+    lat: 33.5043295,
     
-    // lng: -86.102744,
+    lng: -86.102744,
     
-    // name: "Providence Volunteer Fire Department",
+    name: "Providence Volunteer Fire Department",
     
-    // street_num: "3550",
+    street_num: "3550",
     
-    // road: "Providence Road",
+    road: "Providence Road",
     
-    // city: "Talladega",
+    city: "Talladega",
     
-    // state: "AL",
+    state: "AL",
     
-    // zip_code: "35160"
+    zip_code: "35160"
     
-    // },{
+    },{
     
-    // id: 11,
+    id: 11,
     
-    // lat: 33.4498361,
+    lat: 33.4498361,
     
-    // lng: -86.2432207,
+    lng: -86.2432207,
     
-    // name: "Renfroe Volunteer Fire Department",
+    name: "Renfroe Volunteer Fire Department",
     
-    // street_num: "7191",
+    street_num: "7191",
     
-    // road: "Renfroe Road",
+    road: "Renfroe Road",
     
-    // city: "Talladega",
+    city: "Talladega",
     
-    // state: "AL",
+    state: "AL",
     
-    // zip_code: "35160"
+    zip_code: "35160"
     
-    // },{
+    },{
     
-    // id: 12,
+    id: 12,
     
-    // lat: 33.4303361,
+    lat: 33.4303361,
     
-    // lng: -86.1033618,
+    lng: -86.1033618,
     
-    // name: "Spring Street Recreational Center",
+    name: "Spring Street Recreational Center",
     
-    // street_num: "502",
+    street_num: "502",
     
-    // road: "South Spring Street",
+    road: "South Spring Street",
     
-    // city: "Talladega",
+    city: "Talladega",
     
-    // state: "AL",
+    state: "AL",
     
-    // zip_code: "35160"
+    zip_code: "35160"
     
-    // },{
+    },{
     
-    // id: 13,
+    id: 13,
     
-    // lat: 33.5133853,
+    lat: 33.5133853,
     
-    // lng: -86.2205451,
+    lng: -86.2205451,
     
-    // name: "Stemley Volunteer Fire Department",
+    name: "Stemley Volunteer Fire Department",
     
-    // street_num: "135",
+    street_num: "135",
     
-    // road: "Rock Church Road",
+    road: "Rock Church Road",
     
-    // city: "Talladega",
+    city: "Talladega",
     
-    // state: "AL",
+    state: "AL",
     
-    // zip_code: "35160"
+    zip_code: "35160"
     
-    // },{
+    },{
     
-    // id: 14,
+    id: 14,
     
-    // lat: 33.3415193,
+    lat: 33.3415193,
     
-    // lng: -86.1880178,
+    lng: -86.1880178,
     
-    // name: "Winterboro Volunteer Fire Department",
+    name: "Winterboro Volunteer Fire Department",
     
-    // street_num: "1375",
+    street_num: "1375",
     
-    // road: "Bullocks Ferry Road",
+    road: "Bullocks Ferry Road",
     
-    // city: "Talladega",
+    city: "Talladega",
     
-    // state: "AL",
+    state: "AL",
     
-    // zip_code: "35160"
+    zip_code: "35160"
     
-    // },{
+    },{
     
-    // id: 15,
+    id: 15,
     
-    // lat: 33.5129097,
+    lat: 33.5129097,
     
-    // lng: -85.956188,
+    lng: -85.956188,
     
-    // name: "Munford Volunteer Fire Department",
+    name: "Munford Volunteer Fire Department",
     
-    // street_num: "825",
+    street_num: "825",
     
-    // road: "Carter Street",
+    road: "Carter Street",
     
-    // city: "Munford",
+    city: "Munford",
     
-    // state: "AL",
+    state: "AL",
     
-    // zip_code: "36268"
+    zip_code: "36268"
     
-    // },{
+    },{
     
-    // id: 16,
+    id: 16,
     
-    // lat: 33.5282929,
+    lat: 33.5282929,
     
-    // lng: -85.9531489,
+    lng: -85.9531489,
     
-    // name: "Munford Volunteer Fire Department",
+    name: "Munford Volunteer Fire Department",
     
-    // street_num: "115",
+    street_num: "115",
     
-    // road: "Main Street",
+    road: "Main Street",
     
-    // city: "Munford",
+    city: "Munford",
     
-    // state: "AL",
+    state: "AL",
     
-    // zip_code: "36268"
+    zip_code: "36268"
     
-    // },{
+    },{
     
-    // id: 17,
+    id: 17,
     
-    // lat: 38.8287611,
+    lat: 38.8287611,
     
-    // lng: -90.47850749999999,
+    lng: -90.47850749999999,
     
-    // name: "Orchard Farm RV school District",
+    name: "Orchard Farm RV school District",
     
-    // street_num: "3489",
+    street_num: "3489",
     
-    // road: "Boschertown Rd",
+    road: "Boschertown Rd",
     
-    // city: "St. Charles",
+    city: "St. Charles",
     
-    // state: "MO",
+    state: "MO",
     
-    // zip_code: "63301"
+    zip_code: "63301"
     
-    // },{
+    },{
     
-    // id: 18,
+    id: 18,
     
-    // lat: 39.7043522,
+    lat: 39.7043522,
     
-    // lng: -91.4455079,
+    lng: -91.4455079,
     
-    // name: "Moberly Area CC",
+    name: "Moberly Area CC",
     
-    // street_num: "190",
+    street_num: "190",
     
-    // road: "Shinn Lane",
+    road: "Shinn Lane",
     
-    // city: "Hannibal",
+    city: "Hannibal",
     
-    // state: "MO",
+    state: "MO",
     
-    // zip_code: "63401"
+    zip_code: "63401"
     
-    // },{
+    },{
     
-    // id: 19,
+    id: 19,
     
-    // lat: 39.5155673,
+    lat: 39.5155673,
     
-    // lng: -91.5116918,
+    lng: -91.5116918,
     
-    // name: "Ralls County R-II School District",
+    name: "Ralls County R-II School District",
     
-    // street_num: "21622",
+    street_num: "21622",
     
-    // road: "Highway 19",
+    road: "Highway 19",
     
-    // city: "Center",
+    city: "Center",
     
-    // state: "MO",
+    state: "MO",
     
-    // zip_code: "63436"
+    zip_code: "63436"
     
-    // },{
+    },{
     
-    // id: 20,
+    id: 20,
     
-    // lat: 37.2397211,
+    lat: 37.2397211,
     
-    // lng: -90.9629729,
+    lng: -90.9629729,
     
-    // name: "Southern Reynolds Co. RII",
+    name: "Southern Reynolds Co. RII",
     
-    // street_num: "1",
+    street_num: "1",
     
-    // road: "School Street",
+    road: "School Street",
     
-    // city: "Ellington",
+    city: "Ellington",
     
-    // state: "MO",
+    state: "MO",
     
-    // zip_code: "63638"
+    zip_code: "63638"
     
-    // },
-    // {
-    // id: 21,
+    },
+    {
+    id: 21,
 
-    // lat: 37.791580,
+    lat: 37.791580,
 
-    // lng: -122.402283,
+    lng: -122.402283,
 
-    // name: "Lambda School",
+    name: "Lambda School",
 
-    // street_num: 250,
+    street_num: 250,
 
-    // road: "Montgomery Street",
+    road: "Montgomery Street",
 
-    // city: "San Francisco",
+    city: "San Francisco",
 
-    // state: "CA",
+    state: "CA",
 
-    // zip_code: "94104"
-    // }, {
-    //     id: 22, 
+    zip_code: "94104"
+    }, 
+    {
+        id: 22, 
         
-    //     lat: 39.390041,
+        lat: 39.390041,
 
-    //     lng:  -94.585075,
+        lng:  -94.585075,
 
-    //     name: "Smithville R-II", 
+        name: "Smithville R-II", 
 
-    //     street_num: "645", 
+        street_num: "645", 
         
-    //     road: "South Commercial Avenue", 
+        road: "South Commercial Avenue", 
 
-    //     city: "Smithville", 
+        city: "Smithville", 
 
-    //     stateAbbrev: "MO", 
+        state: "MO", 
 
-    //     zip_code: "64089"
-    //  }
+        zip_code: "64089"
+     }
   ])
 })
 }
