@@ -29,7 +29,6 @@ router.post('/:id', restricted, (req, res) => {
 
 router.get('/:id', (req, res) => {
     const shelterId = req.params.id;
-
     db
     .findById(shelterId)
     .then(result => {
