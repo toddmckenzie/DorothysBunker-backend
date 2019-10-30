@@ -26,7 +26,8 @@ router.post('/register', (req, res) => {
                         id: user.id,
                         username: user.username,
                         email: user.email,
-                        token: token
+                        token: token,
+                        expiration: Date.now() + 1000*60*60*12
                     })
                 })
             .catch(err => console.log(err)) })
@@ -53,7 +54,8 @@ router.post('/',  (req, res) => {
                     id: user.id,
                     username: user.username,
                     email: user.email,
-                    token: token
+                    token: token,
+                    expiration: Date.now() + 1000*60*60*12
             })
         } else {
             res.status(401).json({ message: "Something went wrong with username or password"})
@@ -87,7 +89,7 @@ const generateToken = (user) => {
         username: user.username
     }
     const options = {
-        expiresIn: '8h'
+        expiresIn: '12h'
     }
 
     return jwt.sign(payload, secret.jwtSecret, options)
