@@ -89,7 +89,7 @@ const generateToken = (user) => {
         username: user.username
     }
     const options = {
-        expiresIn: '12h'
+        expiresIn: '1h'
     }
 
     return jwt.sign(payload, secret.jwtSecret, options)
