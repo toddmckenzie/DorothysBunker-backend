@@ -54,8 +54,7 @@ router.post('/',  (req, res) => {
                     id: user.id,
                     username: user.username,
                     email: user.email,
-                    token: token,
-                    expiration: Date.now() + 1000*60*60*12
+                    token: token
             })
         } else {
             res.status(401).json({ message: "Something went wrong with username or password"})
@@ -85,7 +84,7 @@ router.delete('/register/:id', (req, res) => {
 
 const generateToken = (user) => {
     const payload = {
-        subject: user.id,
+        id: user.id,
         username: user.username
     }
     const options = {
