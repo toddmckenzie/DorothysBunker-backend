@@ -7,7 +7,7 @@ const secret = require('../config/secrets.js');
 // findUser(username)
 //send in token from async storage to get user information....
 router.post('/', (req, res) => {
-    let token = req.body.token;
+    let token = req.body;
     if (token) {
         jwt.verify(token, secret.jwtSecret, (err, decodedToken) => {
             if (err) {
