@@ -13,8 +13,9 @@ router.post('/', (req, res) => {
             if (err) {
                 res.status(401).json({ message: "Bad token."})
             } else {
-                db.findUser(decodedToken.username)
+                db.findById(decodedToken.id)
                 .then(user => {
+                    console.log(user)
                     const token = generateToken(user)
                     res.status(200).json({
                         id: user.id,
@@ -38,7 +39,7 @@ router.post('/', (req, res) => {
 
 const generateToken = (user) => {
     const payload = {
-        subject: user.id,
+        id: user.id,
         username: user.username
     }
     const options = {
