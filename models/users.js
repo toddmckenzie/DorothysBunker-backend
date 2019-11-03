@@ -18,6 +18,8 @@ function add(user) {
 }
 
 async function findUser(username) {
+    const user = await db('users').where( 'username', username ).first();
+    console.log(user, ' user')
     return db('users').where( 'username', username ).first();
 }
 
