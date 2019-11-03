@@ -9,7 +9,7 @@ const db = require("../models/users.js")
 
 router.post('/register', (req, res) => {
     let user = req.body;
-    const hash = bcrypt.hashSync(user.password);
+    const hash = bcrypt.hashSync(user.password, 10);
     user.password = hash;
 
     if (!user.username || !user.password || !user.email) {

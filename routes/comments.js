@@ -16,7 +16,6 @@ router.post('/:id', restricted, (req, res) => {
         shelter_id: shelterId,
         user_id: req.body.user_id,
     }
-    console.log(clean);
     
     db
     .addComment(clean)
