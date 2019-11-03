@@ -4,7 +4,7 @@ const db = require('../models/comments.js');
 
 
 
-router.post('/:id', (req, res) => {
+router.post('/:id', restricted, (req, res) => {
     const shelterId = req.params.id;
     
     if (!req.body.comment || !req.body.user_id ) {
