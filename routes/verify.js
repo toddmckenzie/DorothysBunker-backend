@@ -4,8 +4,7 @@ const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const secret = require('../config/secrets.js');
 
-// findUser(username)
-//send in token from async storage to get user information....
+
 router.post('/', (req, res) => {
     let token = req.body.token;
     if (token) {
@@ -15,7 +14,6 @@ router.post('/', (req, res) => {
             } else {
                 db.findById(decodedToken.id)
                 .then(user => {
-                    console.log(user)
                     const token = generateToken(user)
                     res.status(200).json({
                         id: user.id,
