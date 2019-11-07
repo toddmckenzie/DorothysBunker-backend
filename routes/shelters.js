@@ -29,6 +29,8 @@ router.post('/', (req, res) => {
                     .catch(err => {
                         res.status(500).json({ message: "Internal Server Error"})
                     })
+               } else {
+                   res.status(401).json({ message: "Not Authorzied."})
                }
         }})
     }})
@@ -76,7 +78,9 @@ router.delete('/:id', restricted, (req, res) => {
                     .catch(err => {
                         res.status(500).json({ message: "Internal Server Error"})
                     })
-               }
+               } else {
+                res.status(401).json({ message: "Not Authorzied."})
+            }
         }})
     }})
 
