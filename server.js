@@ -1,6 +1,9 @@
+const http = require('http');
 const express = require('express');
+const app = express();
 const helmet = require('helmet');
 const cors = require('cors');
+const serverIO = http.createServer(app);
 
 const server = express();
 
@@ -21,4 +24,6 @@ server.use('/comments', comments);
 server.use('/tellus', tellUs);
 server.use('/verify', verify);
 
-module.exports = server;
+
+
+module.exports = { server, serverIO }
