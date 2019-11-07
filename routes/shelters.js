@@ -1,7 +1,8 @@
 const router = require('express').Router();
 const restricted = require('../auth/restricted.js')
 const db = require("../models/shelters.js")
-
+const jwt = require('jsonwebtoken')
+const secret = require('../config/secrets.js');
 
 router.post('/', (req, res) => {
     const token = req.headers.authorization;
