@@ -10,6 +10,7 @@ exports.up = function(knex) {
       tbl.string('zip_code');
       tbl.float('lat');
       tbl.float('lng');
+      tbl.string('description');
   })
 };
 
