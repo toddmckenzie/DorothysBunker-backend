@@ -1,9 +1,5 @@
 exports.seed = function(knex) {
-  // Deletes ALL existing entries
-  return knex('shelters').del()
-    .then(function () {
-      // Inserts seed entries
-      return knex('shelters').insert([
+    return knex('shelters').insert([
         {'id': 76, 'name': 'City of Independence', 'street_num': 950, 'road': 'N. Spring', 'city': 'Independence', 'state': 'MO', 'zip_code': 65050, 'lat': 39.1011271, 'lng': -94.4200577, 'description': 'null'} ,
         {'id': 77, 'name': 'Linn State Technical College', 'street_num': 1, 'road': 'Technology Drive', 'city': 'Linn', 'state': 'MO', 'zip_code': 65051, 'lat': 38.46754800000001, 'lng': -91.814313, 'description': 'null'} ,
         {'id': 78, 'name': 'Mexico #59 School District', 'street_num': 1250, 'road': 'West Curtis', 'city': 'Mexico', 'state': 'MO', 'zip_code': 65265, 'lat': 39.1767869, 'lng': -91.8961107, 'description': 'null'} ,
@@ -29,5 +25,5 @@ exports.seed = function(knex) {
         {'id': 98, 'name': 'Cabool R-IV School District', 'street_num': 720, 'road': 'Peabody', 'city': 'Cabool', 'state': 'MO', 'zip_code': 65689, 'lat': 37.1260433, 'lng': -92.10376920000002, 'description': 'null'} ,
         {'id': 99, 'name': 'Marshfield', 'street_num': 120, 'road': 'Garst Dr', 'city': 'Marshfield', 'state': 'MO', 'zip_code': 65706, 'lat': 37.3453411, 'lng': -92.90485439999999, 'description': 'null'} 
       ]);
-    });
-};
+    };
+

@@ -1,10 +1,6 @@
 
 exports.seed = function(knex) {
-  // Deletes ALL existing entries
-  return knex('shelters').del()
-    .then(function () {
-      // Inserts seed entries
-      return knex('shelters').insert([
+    return knex('shelters').insert([
         {'id': 26, 'name': 'City of Independence', 'street_num': 1601, 'road': 'S Speck Rd', 'city': 'Independence', 'state': 'MO', 'zip_code': 64057, 'lat': 39.085249, 'lng': -94.359769, 'description': 'null'} ,
         {'id': 27, 'name': 'Oak Grove', 'street_num': 605, 'road': 'E 12th St.', 'city': 'Oak Grove', 'state': 'MO', 'zip_code': 64075, 'lat': 39.001879, 'lng': -94.121926, 'description': 'null'} ,
         {'id': 28, 'name': 'Metropolitan Community College', 'street_num': 500, 'road': 'Southwest Longview Rd', 'city': 'Lee Summit', 'state': 'MO', 'zip_code': 64081, 'lat': 38.9092838, 'lng': -94.45354739999999, 'description': 'null'} ,
@@ -31,5 +27,4 @@ exports.seed = function(knex) {
         {'id': 49, 'name': 'McKinley Elementary', 'street_num': 610, 'road': 'S. Forest Ave', 'city': 'Joplin', 'state': 'MO', 'zip_code': 64801, 'lat': 37.0845251, 'lng': -94.4911628, 'description': 'null'} ,
         {'id': 50, 'name': 'Royal Heights Elementary', 'street_num': 2100, 'road': 'Rolla St', 'city': 'Joplin', 'state': 'MO', 'zip_code': 64801, 'lat': 37.10651560000001, 'lng': -94.48907009999999, 'description': 'null'} 
       ]);
-    });
 };

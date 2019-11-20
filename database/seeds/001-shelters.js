@@ -1,10 +1,9 @@
 
 exports.seed = function(knex) {
-  // Deletes ALL existing entries
-  return knex('shelters').del()
-    .then(function () {
-      // Inserts seed entries
-      return knex('shelters').insert([
+   return knex('shelters').truncate()
+   .then(function () {
+     // Inserts seed entries
+    return knex('shelters').insert([
         {'id': 1, 'name': 'Orchard Farm RV school District', 'street_num': 3489, 'road': 'Boschertown Rd', 'city': 'St. Charles', 'state': 'MO', 'zip_code': 63301, 'lat': 38.8287611, 'lng': -90.47850749999999, 'description': 'null'} ,
         {'id': 2, 'name': 'Moberly Area CC', 'street_num': 190, 'road': 'Shinn Lane', 'city': 'Hannibal', 'state': 'MO', 'zip_code': 63401, 'lat': 39.7043522, 'lng': -91.4455079, 'description': 'null'} ,
         {'id': 3, 'name': 'Ralls County R-II School District', 'street_num': 21622, 'road': 'Highway 19', 'city': 'Center', 'state': 'MO', 'zip_code': 63436, 'lat': 39.5155673, 'lng': -91.5116918, 'description': 'null'} ,
