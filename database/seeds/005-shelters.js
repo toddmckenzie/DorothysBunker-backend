@@ -1,10 +1,6 @@
 
 exports.seed = function(knex) {
-  // Deletes ALL existing entries
-  return knex('shelters').del()
-    .then(function () {
-      // Inserts seed entries
-      return knex('shelters').insert([
+  return knex('shelters').insert([
         {'id': 126, 'name': 'Drury University', 'street_num': 935, 'road': 'N Summit Ave', 'city': 'Springfield', 'state': 'MO', 'zip_code': 65802, 'lat': 37.21841149999999, 'lng': -93.2846946, 'description': 'null'} ,
         {'id': 127, 'name': 'Missouri State University', 'street_num': 827, 'road': 'E Elm St', 'city': 'Springfield', 'state': 'MO', 'zip_code': 65897, 'lat': 37.2056689, 'lng': -93.28289269999999, 'description': 'null'} ,
         {'id': 128, 'name': 'Crowder College', 'street_num': 601, 'road': 'Laclede Ave', 'city': 'Neosho', 'state': 'MO', 'zip_code': 64850, 'lat': 36.81418, 'lng': -94.368685, 'description': 'null'} ,
@@ -26,5 +22,4 @@ exports.seed = function(knex) {
         {'id': 144, 'name': 'Kickapoo High School', 'street_num': 3710, 'road': 'S. Jefferson', 'city': 'Springfield', 'state': 'MO', 'zip_code': 'null', 'lat': 37.147677, 'lng': -93.28913899999999, 'description': 'null'} ,
         {'id': 145, 'name': 'Jasper County School District', 'street_num': 201, 'road': 'West Mercer Street', 'city': 'Jasper', 'state': 'MO', 'zip_code': 'null', 'lat': 37.3410363, 'lng': -94.3031397, 'description': 'null'}
       ]);
-    });
 };

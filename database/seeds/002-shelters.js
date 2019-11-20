@@ -1,10 +1,6 @@
 
 exports.seed = function(knex) {
-  // Deletes ALL existing entries
-  return knex('shelters').del()
-    .then(function () {
-      // Inserts seed entries
-      return knex('shelters').insert([
+    return knex('shelters').insert([
         {'id': 100, 'name': 'Marshfield School District', 'street_num': 190, 'road': 'N. Locus', 'city': 'Marshfield', 'state': 'MO', 'zip_code': 65706, 'lat': 37.339583, 'lng': -92.89883019999999, 'description': 'null'} ,
         {'id': 101, 'name': 'Monett R-I School District', 'street_num': 601, 'road': 'Learning Lane', 'city': 'Monett', 'state': 'MO', 'zip_code': 65708, 'lat': 36.9230377, 'lng': -93.9427656, 'description': 'null'} ,
         {'id': 102, 'name': 'Monett R-I School District', 'street_num': 711, 'road': '9th Street', 'city': 'Monett', 'state': 'MO', 'zip_code': 65708, 'lat': 36.9283967, 'lng': -93.91686399999999, 'description': 'null'} ,
@@ -33,5 +29,4 @@ exports.seed = function(knex) {
         {'id': 125, 'name': 'Missouri State University', 'street_num': 323, 'road': 'West Trish Knight Street', 'city': 'West Plains', 'state': 'MO', 'zip_code': 65775, 'lat': 36.730083, 'lng': -91.8556881, 'description': 'null'} 
       
       ]);
-    });
 };

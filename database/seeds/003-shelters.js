@@ -1,9 +1,5 @@
 
 exports.seed = function(knex) {
-  // Deletes ALL existing entries
-  return knex('shelters').del()
-    .then(function () {
-      // Inserts seed entries
       return knex('shelters').insert([
         {'id': 51, 'name': 'Soaring Heights', 'street_num': 4604, 'road': 'E. 20th St', 'city': 'Joplin', 'state': 'MO', 'zip_code': 64801, 'lat': 37.0683939, 'lng': -94.4481984, 'description': 'null'} ,
         {'id': 52, 'name': 'West Central Elementary', 'street_num': 1001, 'road': 'W. 7th St', 'city': 'Joplin', 'state': 'MO', 'zip_code': 64801, 'lat': 37.0847171, 'lng': -94.5246969, 'description': 'null'} ,
@@ -32,5 +28,4 @@ exports.seed = function(knex) {
         {'id': 75, 'name': 'Moniteau County R-V', 'street_num': 156, 'road': 'School Street', 'city': 'Latham', 'state': 'MO', 'zip_code': 65050, 'lat': 38.558855, 'lng': -92.6807391, 'description': 'null'} 
         
       ]);
-    });
 };
