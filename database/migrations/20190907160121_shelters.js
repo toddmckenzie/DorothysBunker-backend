@@ -11,6 +11,8 @@ exports.up = function(knex) {
       tbl.float('lat');
       tbl.float('lng');
       tbl.string('description');
+      tbl.string('website');
+      tbl.string('phone');
   })
 };
 
