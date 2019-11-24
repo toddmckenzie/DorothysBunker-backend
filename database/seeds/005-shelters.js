@@ -21,6 +21,6 @@ exports.seed = function(knex) {
         {'id': 143, 'name': 'Jeffries Elementary School', 'street_num': 4051, 'road': 'S. Scenic', 'city': 'Springfield', 'state': 'MO', 'zip_code': 'null', 'lat': 37.140683, 'lng': -93.334994 } ,
         {'id': 144, 'name': 'Kickapoo High School', 'street_num': 3710, 'road': 'S. Jefferson', 'city': 'Springfield', 'state': 'MO', 'zip_code': 'null', 'lat': 37.147677, 'lng': -93.28913899999999 } ,
         {'id': 145, 'name': 'Jasper County School District', 'street_num': 201, 'road': 'West Mercer Street', 'city': 'Jasper', 'state': 'MO', 'zip_code': 'null', 'lat': 37.3410363, 'lng': -94.3031397 },
-        { id: 146, 'name': 'Lambda School', 'street_num': 250, 'road': 'Montgomery St.', 'city': 'San Francisco', 'state': 'MO', 'zip_code': 94104, 'lat': 34.791580, 'lng': -122.402283 }
+        { id: 146, 'name': 'Lambda School', 'street_num': 250, 'road': 'Montgomery St.', 'city': 'San Francisco', 'state': 'CA', 'zip_code': 94104, 'lat': 37.791580, 'lng': -122.402280 }
       ]);
 };
