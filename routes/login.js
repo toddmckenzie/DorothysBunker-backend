@@ -11,7 +11,6 @@ router.post('/register', (req, res) => {
     let user = req.body;
     const hash = bcrypt.hashSync(user.password, 10);
     user.password = hash;
-    console.log(hash)
 
     if (!user.username || !user.password || !user.email) {
         return res.status(400).json({ message: "A username, password or email is missing."})
@@ -20,6 +19,7 @@ router.post('/register', (req, res) => {
     db
     .add(user)
     .then(result => {
+        console.log(result)
         db.findUser(user.username)
             .then(user => {
                 const token = generateToken(user)

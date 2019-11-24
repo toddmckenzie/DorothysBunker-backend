@@ -23,7 +23,8 @@ exports.seed = function(knex) {
         {'id': 96, 'name': 'Fordland R-III School District', 'street_num': 252, 'road': 'N. Center Street', 'city': 'Fordland', 'state': 'MO', 'zip_code': 65652, 'lat': 37.1594888, 'lng': -92.9403645 } ,
         {'id': 97, 'name': 'Hollister R-V School', 'street_num': 1798, 'road': 'State Highway BB', 'city': 'Hollister', 'state': 'MO', 'zip_code': 65672, 'lat': 36.6215533, 'lng': -93.19381489999999 } ,
         {'id': 98, 'name': 'Cabool R-IV School District', 'street_num': 720, 'road': 'Peabody', 'city': 'Cabool', 'state': 'MO', 'zip_code': 65689, 'lat': 37.1260433, 'lng': -92.10376920000002 } ,
-        {'id': 99, 'name': 'Marshfield', 'street_num': 120, 'road': 'Garst Dr', 'city': 'Marshfield', 'state': 'MO', 'zip_code': 65706, 'lat': 37.3453411, 'lng': -92.90485439999999 } 
+        {'id': 99, 'name': 'Marshfield', 'street_num': 120, 'road': 'Garst Dr', 'city': 'Marshfield', 'state': 'MO', 'zip_code': 65706, 'lat': 37.3453411, 'lng': -92.90485439999999 }, 
+        {id: 100, 'name': 'Lambda School', 'street_num': 250, 'road': 'Montgomery St.', 'city': 'San Francisco', 'state': 'MO', 'zip_code': 94104, 'lat': 34.791580, 'lng': -122.402283}
       ]);
     };
 
