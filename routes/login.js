@@ -42,13 +42,14 @@ router.post('/register', (req, res) => {
 
 router.post('/',  (req, res) => {
     let { username, password } = req.body;
-
+    
     if (!username || !password) {
         return res.status(401).json({ message: "Bad Request"})
     }
     db
     .findUser(username)
     .then(user => {
+        console.log(user)
         if (user && bcrypt.compareSync(password, user.password)) {
             const token = generateToken(user)
             res.status(200).json({
