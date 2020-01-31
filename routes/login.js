@@ -77,7 +77,20 @@ router.delete('/register/:id', (req, res) => {
         res.status(200).json(result)
     })
     .catch(err => {
-        res.status(500).json({ message: "internal server error"})
+        res.status(500).json({ message: "Internal server error"})
+    })
+})
+
+
+router.get('/users', (req, res) => {
+
+    db
+    .findAll()
+    .then(result => {
+        res.status(200).json(result)
+    })
+    .catch(err => {
+        res.status(500).json({ message: "Internal server error" })
     })
 })
 
